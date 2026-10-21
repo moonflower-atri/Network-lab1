@@ -1,6 +1,7 @@
 #include "net/socket.hpp"
 #include "proto/frame.hpp"
 
+#include <netinet/in.h>
 #include <netinet/tcp.h>
 #include <pthread.h>
 #include <sys/socket.h>

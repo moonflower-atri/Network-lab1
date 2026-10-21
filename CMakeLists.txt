@@ -28,7 +28,7 @@ set(GLFW_BUILD_WAYLAND OFF CACHE BOOL "" FORCE)
 
 FetchContent_Declare(
   glfw
-  GIT_REPOSITORY https://github.com/glfw/glfw.git
+  GIT_REPOSITORY git@github.com:glfw/glfw.git
   GIT_TAG 3.5.1
   GIT_SHALLOW TRUE
 )
@@ -37,7 +37,7 @@ FetchContent_MakeAvailable(glfw)
 # Dear ImGui 没有自己的 CMakeLists.txt，只取出源码再由下面的目标编译。
 FetchContent_Declare(
   imgui
-  GIT_REPOSITORY https://github.com/ocornut/imgui.git
+  GIT_REPOSITORY git@github.com:ocornut/imgui.git
   GIT_TAG v1.93.0
   GIT_SHALLOW TRUE
 )
